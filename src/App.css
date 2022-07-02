@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+@import 'animate.css';
+body{
+  background-color: #6d597a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.canvas{
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+::-webkit-scrollbar{
+  display: none;
+}
+
+.spheres{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.spheres li{
+  position: relative;
+  display: block;
+  list-style: none;
+
+  animation: animate 25s linear infinite;
+  /* bottom: -150px; */
+}
+
+.spheres li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 2s;
+}
+
+
+.spheres li:nth-child(2){
+  left: 10%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.spheres li:nth-child(3){
+  left: 70%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 4s;
+}
+
+.spheres li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 2s;
+  animation-duration: 18s;
+}
+
+.spheres li:nth-child(5){
+  left: 65%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 2s;
+}
+
+.spheres li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.spheres li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.spheres li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.spheres li:nth-child(9){
+  left: 20%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.spheres li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 2s;
+  animation-duration: 11s;
+}
+
+.spheres li:nth-child(11){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 2s;
+}
+
+
+.spheres li:nth-child(12){
+  left: 10%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.spheres li:nth-child(13){
+  left: 70%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 4s;
+}
+
+.spheres li:nth-child(14){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 2s;
+  animation-duration: 18s;
+}
+
+.spheres li:nth-child(15){
+  left: 65%;
+  width: 75px;
+  height: 75px;
+  animation-delay: 2s;
+}
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.h-span{
+  font-size: 15rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-span-hover{
+  font-size: 8rem;
 }
