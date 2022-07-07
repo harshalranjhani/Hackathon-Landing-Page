@@ -161,9 +161,19 @@ body{
 
 
 .h-span{
-  font-size: 15rem;
+  font-size: 5rem;
 }
 
 .h-span-hover{
   font-size: 8rem;
 }
+/* 
+.pre-loader{
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  z-index: 99999;
+  height: 100vh;
+  background: #fff url('./pre-loader.svg') no-repeat center center/cover;
+
+} */

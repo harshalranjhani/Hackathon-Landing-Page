@@ -25,3 +25,54 @@ h1{
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
 }
+
+.expandButton{
+    position: absolute;
+    top: 17rem;
+    left: 3rem;
+    background-color: #4361EE;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.expandButtonExpand{
+    left: 98%;
+}
+
+.expandNav{
+    width: 60%;
+}
+
+.navList{
+    list-style: none;
+}
+
+.navList li{
+    font-size: 20px;
+    color: #4CC9F0;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.navList:nth-child(1){
+    position: absolute;
+    left: -3.5rem;
+    top: 10rem;
+}
+
+.undraw{
+    height: 400px;
+    width: 400px;
+    margin-left: 19%;
+    margin-top: 9%;
+    background: url('./undraw.svg') no-repeat center center/cover;
+}
+
+.expandedLi{
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.expandedLi:hover{
+    color: #34A0A4;
+}

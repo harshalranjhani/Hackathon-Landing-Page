@@ -1,0 +1,20 @@
+.discord {
+  margin-left: 25rem;
+  margin-top: 22rem;
+  padding: 8px;
+  font-size: 1.5rem;
+  background-color: #480ca8;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.register {
+  margin-left: 5rem;
+  padding: 8px;
+  font-size: 1.5rem;
+  background-color: #480ca8;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

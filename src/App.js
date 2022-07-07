@@ -6,6 +6,7 @@ import data from "./sphereData";
 import Sidebar from "./components/Sidebar";
 import styles from './components/Sidebar.module.css'
 import AnimatedLetters from "./components/AnimatedLetters/AnimatedLetters";
+import Button from "./components/Button/Button";
 
 function App() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -17,13 +18,14 @@ function App() {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
       sethClass('h-span-hover')
-    }, 5000)
+    }, 10000)
   }, [])
 
   return (
     <>
+    {/* <div className="pre-loader"></div> */}
       <div className="App">
-        {/* <Sidebar /> */}
+        <Sidebar />
         <div className="area">
           <ul className="spheres">
             <li><SphereCanvas /></li>
@@ -51,6 +53,7 @@ function App() {
             idx={15}
           />
         </h1>
+        <Button/>
       </div>
     </>
   );
